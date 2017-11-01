@@ -9,25 +9,23 @@ Currently the following functionalities are supported:
 * add reg,reg
 * cmp reg,num
 * jc
-* int 33
+* int 33  
 Both byte sized and word sized registers are allowed.
 
 ## Usage ##
+  
+Compile the codes
+   
+    $ gcc assm.c
+   
+    $ gcc sim.c -o sim
 
-Two steps are required to run this emulator:
-* Compile the codes
-'''
-gcc assm.c
-'''
-'''
-gcc sim.c -o sim
-'''
-* Run the emulator and provide assembly language input
-'''
-./a.out
-'''
+Run the emulator and provide assembly language input
+   
+    $ ./a.out
+    
 This will generate a txt file with machine codes. Use this as input after the next command
-'''
-./ex
-'''
+   
+    $ ./ex
+    
 Output will be displayed
